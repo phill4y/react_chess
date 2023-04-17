@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .app-container {
+    @apply flex
+    bg-gray-300 dark:bg-gray-700
+    ml-10 mr-10
+    h-full w-full
+    overflow-hidden;
+  }
+
+  .content-container {
+    @apply flex flex-col
+    bg-gray-300 dark:bg-gray-700
+    ml-20 mr-20 mt-20 mb-20
+    overflow-hidden;
+  }
+
+  .chessboard-container {
+    @apply grid grid-cols-8 gap-0;
+  }
+
+  .chessboard-square {
+    @apply relative w-24 h-24 shadow
+  }
+
+}
+
+@layer utilities {
+  .square {
+    aspect-ratio: 1 / 1;
+  }
+}
