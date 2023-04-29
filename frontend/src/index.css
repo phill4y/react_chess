@@ -19,11 +19,29 @@
   }
 
   .chessboard-container {
-    @apply grid grid-cols-8 gap-0;
+    @apply flex flex-col gap-0;
   }
 
   .chessboard-square {
-    @apply relative w-24 h-24 shadow
+    @apply relative w-24 h-24
+  }
+
+  .chessboard-column-header {
+    @apply bg-neutral-500 border-black border-2
+    text-center w-full
+  }
+
+  .chessboard-row-header {
+    @apply bg-neutral-500 border-black border-2
+    w-4 text-center h-full
+  }
+
+  .chess-piece {
+    @apply w-24 h-24 cursor-move
+  }
+
+  .chess-piece-container {
+    @apply absolute top-0 left-0 bg-none
   }
 
 }
